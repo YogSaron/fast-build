@@ -44,17 +44,17 @@ public class ShiroConfiguration {
         return shiroFilterFactoryBean;
     }
 
-    @Bean
+    /*@Bean
     public MyShiroRealm myShiroRealm(){
         MyShiroRealm myShiroRealm = new MyShiroRealm();
         myShiroRealm.setCredentialsMatcher(hashedCredentialsMatcher());
         return myShiroRealm;
-    }
+    }*/
 
    @Bean
    public SecurityManager securityManager(){
        DefaultWebSecurityManager securityManager = new DefaultWebSecurityManager();
-       securityManager.setRealm(myShiroRealm());
+//       securityManager.setRealm(myShiroRealm());
        return securityManager;
    }
 

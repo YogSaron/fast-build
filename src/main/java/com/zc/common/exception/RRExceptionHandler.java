@@ -1,6 +1,6 @@
 package com.zc.common.exception;
 
-import io.renren.common.utils.R;
+import com.zc.common.utils.R;
 import org.apache.shiro.authz.AuthorizationException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,7 +8,6 @@ import org.springframework.dao.DuplicateKeyException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import static javafx.scene.input.KeyCode.R;
 
 /**
  * 异常处理器

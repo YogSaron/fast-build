@@ -1,7 +1,6 @@
 package com.zc.config.shiro;
 
-import com.me.mybatis.entity.SysUser;
-import com.me.service.AdministrationService;
+
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
@@ -21,15 +20,15 @@ import java.util.Properties;
 /**
  * Created by Logan Zhou on 2018-02-07.
  */
-public class MyShiroRealm extends AuthorizingRealm {
+/*public class MyShiroRealm extends AuthorizingRealm {
 
     @Autowired
-    private AdministrationService administrationService;
-    /**
+//    private AdministrationService administrationService;
+    *//**
      * 授权Authorization
      * @param principalCollection
      * @return
-     */
+     *//*
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
         System.out.println("权限配置-->MyShiroRealm.doGetAuthorizationInfo()");
@@ -38,12 +37,12 @@ public class MyShiroRealm extends AuthorizingRealm {
         return null;
     }
 
-    /**
+    *//**
      * Authentication认证 登录
      * @param authenticationToken
      * @return
      * @throws AuthenticationException
-     */
+     *//*
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {
         System.out.println("MyShiroRealm.doGetAuthenticationInfo()");
@@ -67,12 +66,12 @@ public class MyShiroRealm extends AuthorizingRealm {
         return simpleAuthenticationInfo;
     }
 
-    /**
+    *//**
      *  开启shiro aop注解支持.
      *  使用代理方式;所以需要开启代码支持;
      * @param securityManager
      * @return
-     */
+     *//*
     @Bean
     public AuthorizationAttributeSourceAdvisor authorizationAttributeSourceAdvisor(SecurityManager securityManager){
         AuthorizationAttributeSourceAdvisor authorizationAttributeSourceAdvisor = new AuthorizationAttributeSourceAdvisor();
@@ -94,4 +93,4 @@ public class MyShiroRealm extends AuthorizingRealm {
         return r;
     }
 
-}
+}*/
